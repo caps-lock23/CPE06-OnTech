@@ -1,0 +1,186 @@
+@font-face {
+    font-family: Alstoria;
+    src: url(./font/alstoria/Alstoria.ttf) format("truetype");
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+#Contrivance {
+    font-size: 3em;
+    font-family: Alstoria;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #f7f5e8;
+    padding-bottom: 3em;
+    color: black;
+}
+
+main {
+    position: relative;
+    background-image: url(./images/skateman.png);
+    background-size: cover;
+}
+
+figcaption h4 {
+    font-family: 'Century Gothic';
+    font-size: large;
+}
+
+.tb>p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.7em;
+    word-spacing: 0.3em;
+}
+
+nav,
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 1em;
+}
+
+ul {
+    gap: 1em;
+    padding: 0;
+}
+
+blockquote {
+    background-color: #e5e7eb;
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #002E25;
+}
+
+mark {
+    background-image: linear-gradient(to right, #d8ba67, #e9cb78);
+    border-radius: 20px 0px;
+    margin-left: 5px;
+    padding: 10px;
+}
+
+h2 {
+    margin: 20px;
+    font-family: Alstoria;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+}
+
+a:hover {
+    background-color: black;
+    color: azure;
+}
+
+.af {
+    font-weight: bold;
+    color: azure;
+}
+
+li {
+    list-style-type: none;
+}
+
+.addr,
+h3 {
+    color: white;
+}
+
+blockquote {
+    background-color: #002E25;
+    color: white;
+}
+
+q {
+    font-size: xx-large;
+}
+
+cite {
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+}
+
+marquee {
+    background-color: black;
+    color: azure;
+    font-size: 2em;
+    padding: 5px;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+img {
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.product:hover {
+    box-shadow: rgb(0, 46, 37) 5px 5px, rgba(0, 46, 37, 0.4) 10px 10px, rgb(10, 88, 73, 0.3) 15px 15px, rgb(27, 105, 90, 0.2) 20px 20px, rgb(218, 165, 32, 0.1) 25px 25px;
+
+}
+
+button:hover {
+    border-radius: 7px;
+    color: #002E25;
+    border-color: #002E25;
+    background-color: azure;
+    padding: 21px;
+    font-family: 'Century Gothic';
+    font-weight: bold;
+}
+
+button {
+    border-radius: 7px;
+    color: azure;
+    border-color: azure;
+    background-color: #002E25;
+    padding: 21px;
+    font-family: 'Century Gothic';
+}
+
+h1 small {
+    margin-left: 1em;
+    font-family: Alstoria;
+}
+
+.true {
+    font-family: Alstoria;
+    font-size: 60px;
+}
+
+.lineup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    height: fit-content;
+    width: 520px;
+    padding: 1em;
+    margin-right: 3em;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 20px;
+
+}
