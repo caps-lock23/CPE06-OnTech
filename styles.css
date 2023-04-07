@@ -40,17 +40,23 @@ figcaption h4 {
     word-spacing: 0.3em;
 }
 
-nav,
-ul {
+nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 1em;
 }
 
+.navigation>ul{
+    display: flex;
+    flex-direction: row;
+}
+
 ul {
-    gap: 1em;
-    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 1em;
+    padding-bottom: 1em;
 }
 
 blockquote {
@@ -69,7 +75,7 @@ mark {
     background-image: linear-gradient(to right, #d8ba67, #e9cb78);
     border-radius: 20px 0px;
     margin-left: 5px;
-    padding: 10px;
+    padding: 5px;
 }
 
 h2 {
@@ -94,6 +100,7 @@ a:hover {
 }
 
 li {
+    display: grid;
     list-style-type: none;
 }
 
