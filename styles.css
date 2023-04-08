@@ -6,6 +6,8 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 #Contrivance {
@@ -27,6 +29,7 @@ main {
     position: relative;
     background-image: url(./images/skateman.png);
     background-size: cover;
+    padding: 1em;
 }
 
 figcaption h4 {
@@ -34,10 +37,12 @@ figcaption h4 {
     font-size: large;
 }
 
-.tb>p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.tb > p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25em;
+    letter-spacing: 0.05em;
     line-height: 1.7em;
-    word-spacing: 0.3em;
+    color: black;
 }
 
 nav {
@@ -45,9 +50,11 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 1em;
+    margin-top: .75em;
+    margin-right: .5em;
 }
 
-.navigation>ul{
+.navigation>ul {
     display: flex;
     flex-direction: row;
 }
@@ -57,18 +64,15 @@ ul {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-gap: 1em;
     padding-bottom: 1em;
+    padding-left: 0px;
 }
 
 blockquote {
-    background-color: #e5e7eb;
-    margin: 0;
-}
-
-footer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: #002E25;
+    flex-direction: column;
+    background-color: #e5e7eb;
+    align-items: center;
+    justify-content: center;
 }
 
 mark {
@@ -107,6 +111,11 @@ li {
 .addr,
 h3 {
     color: white;
+    margin-bottom: 1em;
+}
+
+address {
+    padding: 1em;
 }
 
 blockquote {
@@ -146,6 +155,10 @@ img {
 
 }
 
+.product {
+    margin-top: 1em;
+}
+
 button:hover {
     border-radius: 7px;
     color: #002E25;
@@ -173,13 +186,14 @@ h1 small {
 .true {
     font-family: Alstoria;
     font-size: 60px;
+    margin-bottom: .5em;
 }
 
 .lineup {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5em;
 }
 
 input {
@@ -189,5 +203,46 @@ input {
     margin-right: 3em;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-radius: 20px;
+}
 
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px 1px;
+}
+
+figure button {
+    margin: 10px;
+}
+
+figcaption {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 1em;
+    width: 250px;
+    padding: 1em;
+}
+
+
+footer {
+    display: grid;
+    grid-template-columns: 3fr 1.6fr repeat(2, 1fr);
+    grid-gap: 1.5em;
+    background-color: #002E25;
+    padding: 1.25em;
+    line-height: 1.5em;
+}
+
+.bLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.bLinks h3 {
+    margin-bottom: 1em;
 }
