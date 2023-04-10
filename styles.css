@@ -50,7 +50,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 1em;
-    margin-top: .75em;
+    padding-top: .75em;
     margin-right: .5em;
 }
 
