@@ -9,7 +9,7 @@ function filterProducts() {
         const titleElement = product.querySelector('figcaption h4');
         const priceElement = product.querySelector('figcaption p.priceTag');
         const descriptionElement = product.querySelector('figcaption p');
-        
+
         // check if title, price, and description elements exist before accessing their textContent property
         const title = titleElement ? titleElement.textContent.toLowerCase() : '';
         const price = priceElement ? priceElement.textContent.toLowerCase() : '';
@@ -23,3 +23,9 @@ function filterProducts() {
         }
     });
 }
+
+function addToCart(button) {
+    const title = button.parentNode.querySelector("h4").textContent;
+    alert(title + " is added to your cart!");
+}
+
