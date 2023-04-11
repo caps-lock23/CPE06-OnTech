@@ -37,7 +37,7 @@ figcaption h4 {
     font-size: large;
 }
 
-.tb > p {
+.tb>p {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.25em;
     letter-spacing: 0.05em;
@@ -59,12 +59,17 @@ nav {
     flex-direction: row;
 }
 
-ul {
+footer>ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-gap: 1em;
     padding-bottom: 1em;
     padding-left: 0px;
+}
+
+#product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 blockquote {
@@ -91,10 +96,11 @@ a {
     text-decoration: none;
     color: black;
     padding: 15px;
+    transition: background-color 0.3s ease-in-out;
 }
 
 a:hover {
-    background-color: black;
+    background-color: #222;
     color: azure;
 }
 
@@ -150,9 +156,22 @@ img {
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-.product:hover {
-    box-shadow: rgb(0, 46, 37) 5px 5px, rgba(0, 46, 37, 0.4) 10px 10px, rgb(10, 88, 73, 0.3) 15px 15px, rgb(27, 105, 90, 0.2) 20px 20px, rgb(218, 165, 32, 0.1) 25px 25px;
+.product {
+    box-shadow: rgb(0, 46, 37) 0px 0px, rgba(0, 46, 37, 0.4) 0px 0px, rgb(10, 88, 73, 0.3) 0px 0px, rgb(27, 105, 90, 0.2) 0px 0px;
+    transition: box-shadow 0.3s ease-in-out;
+}
 
+.product:hover {
+    box-shadow: rgba(0, 46, 37, 0.7) 3px 3px, rgba(0, 46, 37, 0.4) 5px 5px, rgb(10, 88, 73, 0.3) 8px 8px, rgb(27, 105, 90, 0.2) 11px 11px;
+}
+
+figure {
+    height: 100%;
+    transition: height 0.3s ease-in-out;
+}
+
+figure:hover {
+    height: 103%;
 }
 
 .product {
@@ -242,4 +261,8 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     padding: 5px;
+}
+
+#product-list {
+    gap: 1em;
 }

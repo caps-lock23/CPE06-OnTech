@@ -37,12 +37,12 @@ nav a {
   color: black;
   text-decoration: none;
   padding: 10px;
+  transition: background-color 0.3s ease-in-out;
 }
 
 nav a:hover {
   color: white;
-  background-color: black;
-  font-weight: bold;
+  background-color: #222;
 }
 
 main {
@@ -95,7 +95,6 @@ main div {
   background-size: 200% auto;
   color: #fff;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
